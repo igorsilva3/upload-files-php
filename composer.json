@@ -1,0 +1,22 @@
+{
+  "name": "nicro/upload-files-php",
+  "version": "1.0.0",
+  "description": "",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "scripts": {
+    "php:serve": "php -S localhost:8080 -t src/"
+  },
+  "authors": [
+    {
+      "name": "igorsilva3",
+      "email": "igorbr2018@gmail.com"
+    }
+  ],
+  "require": {
+    "codeguy/upload": "^1.3"
+  }
+}
