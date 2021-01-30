@@ -14,7 +14,7 @@
   <div class="content">
     <h1>Upload Files</h1>
     <form method="POST" enctype="multipart/form-data" action="./config/upload.php">
-        <input type="file" name="file" value="" multiple=""/>
+        <input type="file" name="files[]" value="" multiple=""/>
         <input type="submit" value="Upload File"/>
     </form>
   </div>

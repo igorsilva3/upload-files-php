@@ -1,7 +1,5 @@
 <?php
 
-use function PHPSTORM_META\type;
-
 $PATH = dirname(__DIR__, 2);
 $AUTOLOAD_PATH = realpath($PATH.'/vendor/autoload.php');
 $UPLOAD_PATH = realpath($PATH.'/uploads');
@@ -9,11 +7,24 @@ $UPLOAD_PATH = realpath($PATH.'/uploads');
 require_once $AUTOLOAD_PATH;
 
 $storage = new \Upload\Storage\FileSystem($UPLOAD_PATH);
-$files = new \Upload\File('file', $storage);
+$files = new \Upload\File('files', $storage);
 
 // Optionally you can rename the file on upload
-$new_filename = uniqid();
-$files->setName($new_filename);
+$new_filenames = array_map("newName", 
+  is_array($files->getName()) ? 
+    $files->getName() : array($files->getName())
+);
+
+// set name for file
+for ($i=0; $i < count($files); $i++) { 
+  $file = $files[$i];
+  $file->setName($new_filenames[$i]);
+} 
+
+// Create new name for file
+function newName(string $originalName){
+  return $originalName . uniqid("-");
+}
 
 // Validate file upload
 // MimeType List => http://www.iana.org/assignments/media-types/media-types.xhtml
