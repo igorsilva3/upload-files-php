@@ -1,3 +1,12 @@
+<!-- Table of contents -->
+
+## :pushpin: Table of Contents
+
+- [Prerequisites](#prerequisites)
+- [Installing dependecies](#installing-dependecies)
+- [How to run](#how-to-run)
+  - [License](#license)
+
 # Prerequisites
 
 - PHP 7.4.10
@@ -30,3 +39,14 @@ Now, to run the project, execute this command in the terminal:
 ```bash
 composer php:serve
 ```
+
+<!-- License -->
+
+## License
+
+Released in 2020 :closed_book: License.
+
+Made with :heart: by [Igor Silva](https://github.com/igorsilva3).
+This project is under the [MIT license](./LICENSE).
+
+Give a :star: if this project helped you!
