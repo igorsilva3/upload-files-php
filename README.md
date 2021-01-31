@@ -5,7 +5,7 @@
 - [Prerequisites](#prerequisites)
 - [Installing dependecies](#installing-dependecies)
 - [How to run](#how-to-run)
-  - [License](#license)
+- [License](#license)
 
 # Prerequisites
 
