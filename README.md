@@ -1,3 +1,7 @@
+<!-- Description  -->
+
+> _This is a project to load a single file or several files in PHP. :stars:_
+
 <!-- Table of contents -->
 
 ## :pushpin: Table of Contents
